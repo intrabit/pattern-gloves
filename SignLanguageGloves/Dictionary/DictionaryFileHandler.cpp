@@ -1,5 +1,7 @@
 #include "DictionaryFileHandler.h"
 
+// TODO: Implement designed file format.
+
 void DictionaryFileHandler::writeDictionaryFile(Dictionary* dict, const char* filename) {
 	
 }
