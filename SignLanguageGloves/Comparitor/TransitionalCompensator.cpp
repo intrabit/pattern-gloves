@@ -66,40 +66,5 @@ bool TransitionalCompensator::compare(Frame* frame, Frame* wordFrames, int index
 }
 
 // Upgrade: Make the program check to see if the word's frame at the index is a point of change. 
-//			If it is, then do the trust. Otherwise there's no point. 
+//			If it is, then do the trust. 
 
-
-/*
-if (trust) {
-if (trustExpiry > 0) {
-trustExpiry -= 1;
-return true;
-}
-else {
-trust = false;
-}
-}
-bool matched = false;
-if (word->type == 1) {
-matched = compareFingers(&frame->left, &word->frames[index].left);
-}
-else if (word->type == 2) {
-matched = compareFingers(&frame->right, &word->frames[index].right);
-}
-else {
-matched = compareFingers(&frame->left, &word->frames[index].left)
-&& compareFingers(&frame->right, &word->frames[index].right);
-}
-if (!matched) {
-if (earlyCheck(frame, word, index)) {
-return true;
-}
-else {
-if (gyroStatus) {
-trust = true;
-trustExpiry = TRUST_EXPIRY;
-}
-}
-}
-return matched;
-*/
