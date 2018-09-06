@@ -32,5 +32,3 @@ bool Comparitor::compare(Frame* frame, Word* word, int index) {
 	}
 	return gyroMatch && fingerMatch;
 }
-
-// Getting in is very important for me. I've been working tirelessly on this project.
