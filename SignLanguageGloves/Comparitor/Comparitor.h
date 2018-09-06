@@ -13,7 +13,3 @@ public:
 	Comparitor();
 	bool compare(Frame* frame, Word* word, int index);
 };
-
-// Only pass in words that use left hands for the left compensator and right hands for the right compensator.
-// When using words that use both, pass the left snapshot of the frame into the left and the right into the right and
-// logically and their results.
