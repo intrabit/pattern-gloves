@@ -1,9 +1,4 @@
 #include "WordList.h"
-// The dictionary is made up of word lists. Each word list has the ability to refine itself. A frame is given to the word list along with an index.
-// The word list goes through its list of words and checks which words have a matching frame for that index. If a word doesn't match then it removes
-// it from the word list. If the word list contains only one word it will return true, otherwise it will return false.
-
-// When creating the dictionary, it must create a new word list as the refined list each time and gradually reduce it.
 
 WordList::WordList(WordList& copy) {
 	words = new Word[copy.wordCount];
